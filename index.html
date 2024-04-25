@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Portfolio 2</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initila-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="icon" type="image/x-icon" href="favicon.jpg">
+    </head>
+    <body>
+        <div class="w3-top">
+            <div class="w3-bar w3-white w3-card" id="myNavbar">
+                <a href="#home" class="w3-bar-item w3-button w3-wide">LOGO</a>
+                <!--link barra de navegação lado direito-->
+                <div class="w3-right w3-hide-small">
+                    <a href="#sobre" class="w3-bar-item w3-button"><i class="fa fa-user"></i> SOBRE</a>
+                    <a href="#projeto" class="w3-bar-item w3-button"><i class="fa fa-th"></i> PROJETOS</a>
+                    <a href="#contato" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTATO</a>
+                </div>
+                <!--Ocultar links flutuados à direita em telas pequenas e substituí-los por um ícone de menu -->
+            
+                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_close()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+        
+        <!--Barra lateral em telas pequenas ao clicar no ícone de menu-->
+        <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar"> 
+            <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close</a>
+            <a href="#sobre" onclick="w3_close()" class="w3-bar-item w3-button">SOBRE</a>
+            <a href="#projeto" onclick="w3_close()" class="w3-bar-item w3-button">PROJETOS</a>
+            <a href="#contato" onclick="w3_close()" class="w3-bar-item w3-button">CONTATO</a>
+        </nav>
+
+        <!--Cabeçalho com imagem de altura total-->
+        <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+            <div class="w3-display-left w3-text-white" style="padding:48px">
+                <span class="w3-jumbo w3-hide-small">Eu sou, Wendell Paiva</span><br>
+                <span class="w3-xxlarge w3-hide-large w3-hide-medium">Eu sou, Wendell Paiva</span><br>
+                <span class="w3-large">Estudante Técnico em Infomática para Internet</span>
+                <p><a href="#sobre" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Sobre Mim</a></p>
+            </div>
+            <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+                <i class="fa fa-facebook-official w3-hover-opacity"></i>
+                <i class="fa fa-instagram w3-hover-opacity"></i>
+                <i class="fa fa-twitter w3-hover-opacity"></i>
+                <i class="fa fa-linkedin w3-hover-opacity"></i>
+            </div>
+        </header>
+
+        <!--Sobre a seção-->
+        <div class="w3-container" style="padding:128px 16px" id="sobre">
+            <h3 class="w3-center">SOBRE MIM</h3>
+            <p class="w3-center w3-large">Conhecimentos</p>
+            <div class="w3-row-padding w3-center" style="margin-top:100px;">
+                <div class="w3-quarter" style="padding-left: 40%;">
+                    <i class="fa fa-html5 w3-margin-bottom w3-jumbo w3-center"></i>
+                    <p class="w3-large">HTML</p>
+                    <p>Conhecimento em html</p>
+                </div>
+                <div class="w3-quarter" style="padding-left: 10%; padding-right: 0%;">
+                    <i class="fa fa-css3 w3-margin-bottom w3-jumbo"></i>
+                    <p class="w3-large">CSS</p>
+                    <p>Conhecimento em CSS</p>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- Work Section -->
+        <div class="w3-container" style="padding:128px 16px" id="projeto">
+            <h3 class="w3-center">PROJETOS</h3>
+            <p class="w3-center w3-large">Alguns projetos durante o curso</p>
+            <div class="w3-row-padding w3-center" style="margin-top:64px">
+                <a href="https://wendellpaiva.github.io/portfolio/" target="_blank"><img src="portfolio1.png" alt="portfolio1" style="width: 10% ;margin-top: 48px; margin-bottom: 48px;padding: auto;"></a>
+            </div>
+        </div>
+            
+
+
+        <!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contato">
+    <h3 class="w3-center">CONTATO</h3>
+    <p class="w3-center w3-large">Entre em contato. Envie uma mensagem:</p>
+    <div style="margin-top:48px">
+      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Natal, RN</p>
+      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Telefone: +55 (84) 98133-1154</p>
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: wendell_paiva@hotmail.com</p>
+      <br>
+      <form action="https://formspree.io/f/mayrazyd" target="_blank" method="post">
+        <p><input class="w3-input w3-border" type="text" placeholder="Nome" required name="Nome"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Assunto" required name="Assunto"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Mensagem" required name="Mensagem"></p>
+        <p>
+          <button class="w3-button w3-black" type="submit">
+            <i class="fa fa-paper-plane"></i> ENVIAR MENSAGEM
+          </button>
+        </p>
+      </form>
+
+    <!--Imagem de localização/mapa-->
+    <img src="https://www.bing.com/maps/geoplat/REST/v1/Imagery/Map/RoadVibrant/-5.85977,-35.210373/11?ms=608,247&ml=Basemap,LandCover,Landmarks,OsmBuildings&key=AnTcaqBi2ypp0xI-OZNi4W_ik2KhjgpqioTAtXLC8GzkMBQRMlyxvxyTnd5b73im&c=pt-BR&fmt=jpeg&od=1&shading=hill&logo=n&da=ro"
+     class="w3-image w3-greyscale" style="width:100%;margin-top:48px;margin-bottom: 48px;padding:auto;">
+
+    <!--rodapé-->
+    <footer>
+        <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Para o Topo</a>
+        <div class="w3-xlarge w3-section">
+            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div>
+        <p>Desenvolvido por <a href="mailto:wendell_paiva@hotmail.com" title="W3.CSS" target="_blank" class="w3-hover-text-green">Wendell Paiva</a> - Todos os direitos reservados</p>
+    </footer>
+    
+    </body>
+</html>
